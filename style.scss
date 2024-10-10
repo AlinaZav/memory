@@ -1,0 +1,89 @@
+$shadow:  0 5px 15px rgba(0, 0, 0, .3);
+$radius: 10px;
+$gray-color:  #c8c8c8;
+$green-color: #54b05d;
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+.card{
+    background-color: rgb(247, 251, 173);
+    width: 100px;
+    height: 100px;
+    border-radius: $radius;
+    cursor: pointer;
+    box-shadow: $shadow;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: all .3s;
+}
+
+span {
+    transform: rotateY(-180deg);
+}
+
+.flipped{
+    background-color: aliceblue;
+    transform: rotateY(180deg);
+}
+
+.matched{
+    background-color: $green-color;
+    cursor: default;
+}
+
+.control{
+    border-radius: $radius;
+    box-shadow: $shadow;
+    width: 80dvw;
+    padding: 20px;
+    border: 1px solid $gray-color;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+label{
+    font-size: 18px;
+    margin-right: 5px;
+
+}
+input{
+    width: 100px;
+    padding: 6px 8px;
+    border-radius: 8px;
+    border: 1px solid $gray-color;
+    margin-right: 40px;
+}
+
+.btn-sucsses{
+    margin-left: auto;
+    background-color: $green-color;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    color: white;
+    border-radius: $radius;
+    border: 1px solid $gray-color;
+    font-size: 16px;
+    transition: background-color .3s;
+    &:hover{
+        background-color: #316934;
+    }
+}
+
+.board{
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+}

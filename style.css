@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+.card {
+  background-color: rgb(247, 251, 173);
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  transition: all 0.3s;
+}
+
+span {
+  transform: rotateY(-180deg);
+}
+
+.flipped {
+  background-color: aliceblue;
+  transform: rotateY(180deg);
+}
+
+.matched {
+  background-color: #54b05d;
+  cursor: default;
+}
+
+.control {
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 80dvw;
+  padding: 20px;
+  border: 1px solid #c8c8c8;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+label {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+input {
+  width: 100px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #c8c8c8;
+  margin-right: 40px;
+}
+
+.btn-sucsses {
+  margin-left: auto;
+  background-color: #54b05d;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid #c8c8c8;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+.btn-sucsses:hover {
+  background-color: #316934;
+}
+
+.board {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
